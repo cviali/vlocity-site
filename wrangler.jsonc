@@ -16,5 +16,15 @@
             "binding": "WORKER_SELF_REFERENCE",
             "service": "vlocity-arena"
         }
+    ],
+    "routes": [
+        {
+            "pattern": "vlocityarena.com/*",
+            "zone_name": "vlocityarena.com"
+        },
+        {
+            "pattern": "www.vlocityarena.com/*",
+            "zone_name": "vlocityarena.com"
+        }
     ]
 }
