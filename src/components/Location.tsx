@@ -38,30 +38,30 @@ export default function Location({ dict }: { dict: Dictionary }) {
                     {/* Info */}
                     <div className="space-y-6">
                         <div>
-                            <div className="flex items-center gap-3 text-electric">
+                            <div className="flex items-start gap-3 text-electric">
                                 <svg
                                     viewBox="0 0 24 24"
                                     fill="currentColor"
-                                    className="h-6 w-6"
+                                    className="mt-1 h-7 w-7 shrink-0"
                                 >
                                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" />
                                 </svg>
-                                <span className="text-lg font-medium">
+                                <span className="text-base font-medium sm:text-lg">
                                     {dict.location.address}
                                 </span>
                             </div>
                         </div>
 
                         <div>
-                            <div className="flex items-center gap-3 text-neon">
+                            <div className="flex items-start gap-3 text-neon">
                                 <svg
                                     viewBox="0 0 24 24"
                                     fill="currentColor"
-                                    className="h-6 w-6"
+                                    className="mt-1 h-7 w-7 shrink-0"
                                 >
                                     <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
                                 </svg>
-                                <span className="text-lg font-medium">
+                                <span className="text-base font-medium sm:text-lg">
                                     {dict.location.hours}
                                 </span>
                             </div>
