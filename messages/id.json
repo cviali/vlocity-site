@@ -1,0 +1,125 @@
+{
+    "meta": {
+        "title": "Vlocity Arena — Premium Padel, Tennis & Badminton di Jakarta Barat",
+        "description": "Vlocity Arena adalah arena olahraga raket premium dengan 6 lapangan padel, 2 lapangan tenis, 2 lapangan badminton, dan kafe di Jakarta Barat. Booking sekarang di AYO!"
+    },
+    "nav": {
+        "about": "Tentang",
+        "facilities": "Fasilitas",
+        "gallery": "Galeri",
+        "pricing": "Harga",
+        "events": "Acara",
+        "location": "Lokasi",
+        "bookNow": "Booking Sekarang"
+    },
+    "hero": {
+        "title": "Arena Raket Premium di Jakarta Barat",
+        "subtitle": "Padel · Tenis · Badminton · Kafe",
+        "cta": "Booking Sekarang"
+    },
+    "about": {
+        "sectionTitle": "Tentang Vlocity Arena",
+        "description": "Vlocity Arena adalah destinasi olahraga raket premium di Jakarta Barat. Dengan fasilitas kelas dunia dan suasana yang nyaman, kami hadir untuk penggemar padel, tenis, dan badminton.",
+        "stats": {
+            "padel": {
+                "count": "6",
+                "label": "Lapangan Padel"
+            },
+            "tennis": {
+                "count": "2",
+                "label": "Lapangan Tenis"
+            },
+            "badminton": {
+                "count": "2",
+                "label": "Lapangan Badminton"
+            },
+            "cafe": {
+                "count": "1",
+                "label": "Kafe & Lounge"
+            }
+        }
+    },
+    "facilities": {
+        "sectionTitle": "Fasilitas Kami",
+        "cards": {
+            "padel": {
+                "title": "Lapangan Padel",
+                "description": "6 lapangan padel standar internasional dengan pencahayaan premium dan kualitas kaca terbaik."
+            },
+            "tennis": {
+                "title": "Lapangan Tenis",
+                "description": "2 lapangan tenis profesional dengan permukaan berkualitas tinggi dan pencahayaan optimal."
+            },
+            "badminton": {
+                "title": "Lapangan Badminton",
+                "description": "2 lapangan badminton indoor dengan lantai profesional dan AC yang nyaman."
+            },
+            "cafe": {
+                "title": "Kafe & Lounge",
+                "description": "Nikmati hidangan dan minuman segar sambil menonton pertandingan dari lounge kami yang nyaman."
+            }
+        }
+    },
+    "gallery": {
+        "sectionTitle": "Galeri",
+        "viewOnInstagram": "Lihat di Instagram"
+    },
+    "socialProof": {
+        "sectionTitle": "Dipercaya oleh Komunitas",
+        "rating": "4.9",
+        "ratingLabel": "dari 838 ulasan di Google",
+        "stats": {
+            "players": {
+                "count": "1000+",
+                "label": "Pemain Aktif"
+            },
+            "events": {
+                "count": "20+",
+                "label": "Acara Diselenggarakan"
+            },
+            "courts": {
+                "count": "10",
+                "label": "Lapangan Premium"
+            }
+        }
+    },
+    "pricing": {
+        "sectionTitle": "Harga & Booking",
+        "startingFrom": "Mulai dari",
+        "price": "Rp 78.000",
+        "perSession": "per sesi",
+        "description": "Harga terjangkau untuk pengalaman bermain premium. Booking lapangan Anda sekarang melalui AYO.",
+        "cta": "Booking di AYO",
+        "note": "Harga dapat bervariasi berdasarkan waktu dan jenis lapangan."
+    },
+    "events": {
+        "sectionTitle": "Acara & Turnamen",
+        "description": "Selenggarakan acara korporat, turnamen, atau gathering di Vlocity Arena. Kami siap membantu merencanakan acara Anda.",
+        "corporate": {
+            "title": "Acara Korporat",
+            "description": "Venue ideal untuk team building dan acara perusahaan."
+        },
+        "tournament": {
+            "title": "Turnamen",
+            "description": "Turnamen reguler untuk berbagai level pemain."
+        },
+        "ctaWhatsApp": "Hubungi via WhatsApp"
+    },
+    "location": {
+        "sectionTitle": "Lokasi",
+        "address": "Jl. Daan Mogot No.111, Jakarta Barat",
+        "hours": "Buka Setiap Hari: 06:00 – 00:00",
+        "cta": "Lihat di Google Maps"
+    },
+    "footer": {
+        "tagline": "Arena Raket Premium di Jakarta Barat",
+        "followUs": "Ikuti Kami",
+        "copyright": "© 2026 Vlocity Arena. Hak cipta dilindungi."
+    },
+    "whatsapp": {
+        "ariaLabel": "Chat via WhatsApp"
+    },
+    "localeSwitcher": {
+        "switchTo": "English"
+    }
+}

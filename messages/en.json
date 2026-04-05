@@ -1,0 +1,125 @@
+{
+    "meta": {
+        "title": "Vlocity Arena — Premium Padel, Tennis & Badminton in West Jakarta",
+        "description": "Vlocity Arena is a premium racquet sports venue with 6 padel courts, 2 tennis courts, 2 badminton courts, and a café in West Jakarta. Book now on AYO!"
+    },
+    "nav": {
+        "about": "About",
+        "facilities": "Facilities",
+        "gallery": "Gallery",
+        "pricing": "Pricing",
+        "events": "Events",
+        "location": "Location",
+        "bookNow": "Book Now"
+    },
+    "hero": {
+        "title": "Premium Racquet Arena in West Jakarta",
+        "subtitle": "Padel · Tennis · Badminton · Café",
+        "cta": "Book Now"
+    },
+    "about": {
+        "sectionTitle": "About Vlocity Arena",
+        "description": "Vlocity Arena is the premier racquet sports destination in West Jakarta. With world-class facilities and a welcoming atmosphere, we cater to padel, tennis, and badminton enthusiasts.",
+        "stats": {
+            "padel": {
+                "count": "6",
+                "label": "Padel Courts"
+            },
+            "tennis": {
+                "count": "2",
+                "label": "Tennis Courts"
+            },
+            "badminton": {
+                "count": "2",
+                "label": "Badminton Courts"
+            },
+            "cafe": {
+                "count": "1",
+                "label": "Café & Lounge"
+            }
+        }
+    },
+    "facilities": {
+        "sectionTitle": "Our Facilities",
+        "cards": {
+            "padel": {
+                "title": "Padel Courts",
+                "description": "6 international-standard padel courts with premium lighting and top-quality glass walls."
+            },
+            "tennis": {
+                "title": "Tennis Courts",
+                "description": "2 professional tennis courts with high-quality surfaces and optimal lighting."
+            },
+            "badminton": {
+                "title": "Badminton Courts",
+                "description": "2 indoor badminton courts with professional flooring and comfortable air conditioning."
+            },
+            "cafe": {
+                "title": "Café & Lounge",
+                "description": "Enjoy fresh food and drinks while watching matches from our comfortable lounge area."
+            }
+        }
+    },
+    "gallery": {
+        "sectionTitle": "Gallery",
+        "viewOnInstagram": "View on Instagram"
+    },
+    "socialProof": {
+        "sectionTitle": "Trusted by the Community",
+        "rating": "4.9",
+        "ratingLabel": "from 838 reviews on Google",
+        "stats": {
+            "players": {
+                "count": "1000+",
+                "label": "Active Players"
+            },
+            "events": {
+                "count": "20+",
+                "label": "Events Hosted"
+            },
+            "courts": {
+                "count": "10",
+                "label": "Premium Courts"
+            }
+        }
+    },
+    "pricing": {
+        "sectionTitle": "Pricing & Booking",
+        "startingFrom": "Starting from",
+        "price": "Rp 78,000",
+        "perSession": "per session",
+        "description": "Affordable pricing for a premium playing experience. Book your court now through AYO.",
+        "cta": "Book on AYO",
+        "note": "Prices may vary based on time slot and court type."
+    },
+    "events": {
+        "sectionTitle": "Events & Tournaments",
+        "description": "Host your corporate events, tournaments, or gatherings at Vlocity Arena. We're ready to help plan your event.",
+        "corporate": {
+            "title": "Corporate Events",
+            "description": "The ideal venue for team building and corporate gatherings."
+        },
+        "tournament": {
+            "title": "Tournaments",
+            "description": "Regular tournaments for players of all levels."
+        },
+        "ctaWhatsApp": "Contact via WhatsApp"
+    },
+    "location": {
+        "sectionTitle": "Location",
+        "address": "Jl. Daan Mogot No.111, West Jakarta",
+        "hours": "Open Daily: 06:00 – 00:00",
+        "cta": "View on Google Maps"
+    },
+    "footer": {
+        "tagline": "Premium Racquet Arena in West Jakarta",
+        "followUs": "Follow Us",
+        "copyright": "© 2026 Vlocity Arena. All rights reserved."
+    },
+    "whatsapp": {
+        "ariaLabel": "Chat on WhatsApp"
+    },
+    "localeSwitcher": {
+        "switchTo": "Bahasa Indonesia"
+    }
+}
