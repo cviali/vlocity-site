@@ -82,8 +82,21 @@
     "pricing": {
         "sectionTitle": "Pricing & Booking",
         "startingFrom": "Starting from",
-        "price": "Rp 78,000",
         "perSession": "per session",
+        "sports": {
+            "badminton": {
+                "name": "Badminton",
+                "price": "Rp 78,000"
+            },
+            "tennis": {
+                "name": "Tennis",
+                "price": "Rp 275,000"
+            },
+            "padel": {
+                "name": "Padel",
+                "price": "Rp 275,000"
+            }
+        },
         "description": "Affordable pricing for a premium playing experience. Book your court now through AYO.",
         "cta": "Book on AYO",
         "note": "Prices may vary based on time slot and court type."

@@ -82,8 +82,21 @@
     "pricing": {
         "sectionTitle": "Harga & Booking",
         "startingFrom": "Mulai dari",
-        "price": "Rp 78.000",
         "perSession": "per sesi",
+        "sports": {
+            "badminton": {
+                "name": "Badminton",
+                "price": "Rp 78.000"
+            },
+            "tennis": {
+                "name": "Tenis",
+                "price": "Rp 275.000"
+            },
+            "padel": {
+                "name": "Padel",
+                "price": "Rp 275.000"
+            }
+        },
         "description": "Harga terjangkau untuk pengalaman bermain premium. Booking lapangan Anda sekarang melalui AYO.",
         "cta": "Booking di AYO",
         "note": "Harga dapat bervariasi berdasarkan waktu dan jenis lapangan."
