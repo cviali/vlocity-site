@@ -1,6 +1,6 @@
 import type { Dictionary } from "@/app/[locale]/dictionaries";
 
-const statKeys = ["padel", "tennis", "badminton", "cafe"] as const;
+const statKeys = ["padel", "tennis", "badminton"] as const;
 
 export default function About({ dict }: { dict: Dictionary }) {
     return (
@@ -14,7 +14,7 @@ export default function About({ dict }: { dict: Dictionary }) {
                 </p>
 
                 {/* Stats grid */}
-                <div className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-4">
+                <div className="mt-12 grid grid-cols-3 gap-6">
                     {statKeys.map((key) => {
                         const stat = dict.about.stats[key];
                         return (

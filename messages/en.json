@@ -32,10 +32,6 @@
             "badminton": {
                 "count": "2",
                 "label": "Badminton Courts"
-            },
-            "cafe": {
-                "count": "1",
-                "label": "Café & Lounge"
             }
         }
     },
@@ -44,7 +40,7 @@
         "cards": {
             "padel": {
                 "title": "Padel Courts",
-                "description": "6 international-standard padel courts with premium lighting and top-quality glass walls."
+                "description": "6 padel courts with premium lighting and top-quality glass walls, including 1 grandstand court with spectator seats."
             },
             "tennis": {
                 "title": "Tennis Courts",
@@ -52,11 +48,11 @@
             },
             "badminton": {
                 "title": "Badminton Courts",
-                "description": "2 indoor badminton courts with professional flooring and comfortable air conditioning."
+                "description": "2 indoor badminton courts with professional flooring."
             },
             "cafe": {
                 "title": "Café & Lounge",
-                "description": "Enjoy fresh food and drinks while watching matches from our comfortable lounge area."
+                "description": "A comfortable spot to hang out or even work, while enjoying fresh food and drinks."
             }
         }
     },

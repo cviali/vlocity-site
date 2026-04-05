@@ -32,10 +32,6 @@
             "badminton": {
                 "count": "2",
                 "label": "Lapangan Badminton"
-            },
-            "cafe": {
-                "count": "1",
-                "label": "Kafe & Lounge"
             }
         }
     },
@@ -44,7 +40,7 @@
         "cards": {
             "padel": {
                 "title": "Lapangan Padel",
-                "description": "6 lapangan padel standar internasional dengan pencahayaan premium dan kualitas kaca terbaik."
+                "description": "6 lapangan padel dengan pencahayaan premium dan kualitas kaca terbaik, termasuk 1 grandstand court dengan tribun penonton."
             },
             "tennis": {
                 "title": "Lapangan Tenis",
@@ -52,11 +48,11 @@
             },
             "badminton": {
                 "title": "Lapangan Badminton",
-                "description": "2 lapangan badminton indoor dengan lantai profesional dan AC yang nyaman."
+                "description": "2 lapangan badminton indoor dengan lantai profesional."
             },
             "cafe": {
                 "title": "Kafe & Lounge",
-                "description": "Nikmati hidangan dan minuman segar sambil menonton pertandingan dari lounge kami yang nyaman."
+                "description": "Tempat nongkrong yang nyaman untuk bersantai bahkan bekerja, sambil menikmati hidangan dan minuman segar."
             }
         }
     },
