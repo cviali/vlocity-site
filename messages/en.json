@@ -27,7 +27,7 @@
         "cards": {
             "padel": {
                 "title": "Padel Courts",
-                "description": "5 panoramic padel courts with synthetic grass and full glass enclosures, plus 1 exclusive Grandstand VIP court featuring a larger playing area and tiered spectator tribune — ideal for tournaments and events.",
+                "description": "5 panoramic padel courts with synthetic grass and full glass enclosures, plus 1 exclusive Grandstand VIP court — a private court with a bigger area and grandstand tribune, ideal for tournaments and events.",
                 "features": ["Panoramic Courts", "Synthetic Grass", "Grandstand VIP Court", "Racket & Ball Rental", "Ball Boy"]
             },
             "tennis": {
@@ -54,7 +54,12 @@
     "socialProof": {
         "sectionTitle": "Trusted by the Community",
         "rating": "4.9",
-        "ratingLabel": "from 838 reviews on Google and AYO",
+        "ratingLabel": "from 849 reviews on Google and AYO",
+        "breakdown": {
+            "cleanliness": { "label": "Cleanliness", "score": "4.93" },
+            "courtCondition": { "label": "Court Condition", "score": "4.88" },
+            "communication": { "label": "Communication", "score": "4.83" }
+        },
         "stats": {
             "players": {
                 "count": "1000+",

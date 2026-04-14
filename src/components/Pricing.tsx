@@ -1,5 +1,7 @@
 import type { Dictionary } from "@/app/[locale]/dictionaries";
 import FadeIn from "./FadeIn";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
 
 const BOOKING_URL = "https://ayo.co.id/v/vlocity-arena";
 
@@ -103,9 +105,7 @@ export default function Pricing({ dict }: { dict: Dictionary }) {
                         rel="noopener noreferrer"
                         className="mt-6 inline-flex items-center gap-3 rounded-full bg-electric px-10 py-4 text-base font-bold uppercase tracking-wider text-navy transition-all hover:bg-electric/90 hover:scale-105 active:scale-95 sm:text-lg"
                     >
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} className="h-5 w-5" aria-hidden="true">
-                            <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
+                        <FontAwesomeIcon icon={faCalendarDays} className="h-5 w-5" aria-hidden="true" />
                         {dict.pricing.cta}
                     </a>
 

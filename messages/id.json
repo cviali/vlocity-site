@@ -27,7 +27,7 @@
         "cards": {
             "padel": {
                 "title": "Lapangan Padel",
-                "description": "5 lapangan padel panoramic dengan rumput sintetis dan kaca penuh, ditambah 1 lapangan eksklusif Grandstand VIP dengan area lebih luas dan tribun penonton bertingkat — ideal untuk turnamen dan acara.",
+                "description": "5 lapangan padel panoramic dengan rumput sintetis dan kaca penuh, ditambah 1 lapangan eksklusif Grandstand VIP — lapangan privat dengan area lebih luas dan tribun grandstand, ideal untuk turnamen dan acara.",
                 "features": ["Panoramic Court", "Rumput Sintetis", "Grandstand VIP Court", "Sewa Raket & Bola", "Ball Boy"]
             },
             "tennis": {
@@ -54,7 +54,12 @@
     "socialProof": {
         "sectionTitle": "Dipercaya oleh Komunitas",
         "rating": "4.9",
-        "ratingLabel": "dari 838 ulasan di Google & AYO",
+        "ratingLabel": "dari 849 ulasan di Google & AYO",
+        "breakdown": {
+            "cleanliness": { "label": "Kebersihan", "score": "4.93" },
+            "courtCondition": { "label": "Kondisi Lapangan", "score": "4.88" },
+            "communication": { "label": "Komunikasi", "score": "4.83" }
+        },
         "stats": {
             "players": {
                 "count": "1000+",

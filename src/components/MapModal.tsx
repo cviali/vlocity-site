@@ -4,6 +4,8 @@ import Image from "next/image";
 import { useState, lazy, Suspense } from "react";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlassPlus } from "@fortawesome/free-solid-svg-icons";
 
 const Lightbox = lazy(() => import("yet-another-react-lightbox"));
 
@@ -27,7 +29,7 @@ export default function MapModal({ alt }: { alt: string }) {
                     sizes="(max-width: 1280px) 100vw, 1200px"
                 />
                 <span className="mt-2 flex items-center justify-center gap-1 text-xs text-white-60 sm:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    <FontAwesomeIcon icon={faMagnifyingGlassPlus} className="h-3.5 w-3.5" />
                     Tap to zoom
                 </span>
             </button>

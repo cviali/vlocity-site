@@ -6,16 +6,22 @@ import type { Locale } from "./dictionaries";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import "../globals.css";
+
+config.autoAddCss = false;
 
 const inter = Inter({
     variable: "--font-inter",
     subsets: ["latin"],
+    display: "swap",
 });
 
 const montserrat = Montserrat({
     variable: "--font-montserrat",
     subsets: ["latin"],
+    display: "swap",
 });
 
 export async function generateStaticParams() {
@@ -78,6 +84,12 @@ export default async function LocaleLayout({
             lang={locale}
             className={`${inter.variable} ${montserrat.variable} h-full antialiased`}
         >
+            <head>
+                <meta name="theme-color" content="#33584E" />
+                <link rel="dns-prefetch" href="https://ayo.co.id" />
+                <link rel="dns-prefetch" href="https://www.instagram.com" />
+                <link rel="dns-prefetch" href="https://maps.app.goo.gl" />
+            </head>
             <body className="min-h-full flex flex-col bg-navy text-white">
                 <Header dict={dict} locale={locale as Locale} />
                 <main className="flex-1 overflow-x-hidden">{children}</main>

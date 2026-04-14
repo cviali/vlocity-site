@@ -4,6 +4,8 @@ import Image from "next/image";
 import { useState, lazy, Suspense } from "react";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlassPlus } from "@fortawesome/free-solid-svg-icons";
 
 const Lightbox = lazy(() => import("yet-another-react-lightbox"));
 
@@ -51,10 +53,7 @@ export default function GalleryLightbox({ images }: { images: GalleryImage[] }) 
                         />
                         {/* Hover overlay with zoom icon */}
                         <div className="absolute inset-0 flex items-center justify-center bg-electric/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="h-8 w-8 text-navy" aria-hidden="true">
-                                <circle cx="11" cy="11" r="8" />
-                                <path d="M21 21l-4.35-4.35M11 8v6m-3-3h6" />
-                            </svg>
+                            <FontAwesomeIcon icon={faMagnifyingGlassPlus} className="h-8 w-8 text-navy" aria-hidden="true" />
                         </div>
                     </button>
                 ))}

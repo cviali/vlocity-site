@@ -57,7 +57,7 @@ export default async function Page({
         aggregateRating: {
             "@type": "AggregateRating",
             ratingValue: "4.9",
-            reviewCount: "838",
+            reviewCount: "849",
         },
         sport: ["Padel", "Tennis", "Badminton"],
     };

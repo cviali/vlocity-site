@@ -1,5 +1,7 @@
 import type { Dictionary } from "@/app/[locale]/dictionaries";
 import FadeIn from "./FadeIn";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBuilding, faTrophy } from "@fortawesome/free-solid-svg-icons";
 
 const EVENTS_WHATSAPP_URL = "https://wa.me/6281263212777";
 
@@ -26,15 +28,7 @@ export default function Events({ dict }: { dict: Dictionary }) {
                             {/* Court surface header bar */}
                             <div className="court-surface relative flex items-center gap-4 px-6 py-4">
                                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-navy/20">
-                                    <svg
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeWidth={1.5}
-                                        className="h-6 w-6 text-navy"
-                                    >
-                                        <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                                    </svg>
+                                    <FontAwesomeIcon icon={faBuilding} className="h-6 w-6 text-navy" />
                                 </div>
                                 <h3 className="font-heading text-lg font-bold uppercase tracking-wide text-navy">
                                     {dict.events.corporate.title}
@@ -56,15 +50,7 @@ export default function Events({ dict }: { dict: Dictionary }) {
                             {/* Court surface header bar */}
                             <div className="court-surface relative flex items-center gap-4 px-6 py-4">
                                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-navy/20">
-                                    <svg
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeWidth={1.5}
-                                        className="h-6 w-6 text-navy"
-                                    >
-                                        <path d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3A5.25 5.25 0 0013.5 10.5h-3A5.25 5.25 0 005.25 15.75v3m13.5-12h1.875c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H18.75M5.25 6.75H3.375c-.621 0-1.125-.504-1.125-1.125v-1.5c0-.621.504-1.125 1.125-1.125H5.25" />
-                                    </svg>
+                                    <FontAwesomeIcon icon={faTrophy} className="h-6 w-6 text-navy" />
                                 </div>
                                 <h3 className="font-heading text-lg font-bold uppercase tracking-wide text-navy">
                                     {dict.events.tournament.title}

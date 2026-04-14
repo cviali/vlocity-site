@@ -1,6 +1,8 @@
 import Image from "next/image";
 import type { Dictionary } from "@/app/[locale]/dictionaries";
 import FadeIn from "./FadeIn";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMugHot, faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
 const facilityCards = [
     {
@@ -46,10 +48,7 @@ const facilityCards = [
         image: "/images/facilities/cafe.jpg",
         count: "1",
         icon: (
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="h-8 w-8" aria-hidden="true">
-                <path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z" />
-                <path d="M6 1v3M10 1v3M14 1v3" />
-            </svg>
+            <FontAwesomeIcon icon={faMugHot} className="h-8 w-8" aria-hidden="true" />
         ),
     },
 ] as const;
@@ -77,7 +76,7 @@ export default function Facilities({ dict }: { dict: Dictionary }) {
                                     <div className="group relative aspect-[4/3] w-full overflow-hidden rounded-2xl md:w-1/2">
                                         <Image
                                             src={image}
-                                            alt={card.title}
+                                            alt={`Vlocity Arena ${card.title} — ${card.description}`}
                                             title={card.title}
                                             fill
                                             className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -114,9 +113,7 @@ export default function Facilities({ dict }: { dict: Dictionary }) {
                                                         key={feat}
                                                         className="inline-flex items-center gap-1.5 rounded-full border border-white-10 px-3 py-1 text-xs font-medium uppercase tracking-wide text-white-80"
                                                     >
-                                                        <svg viewBox="0 0 16 16" fill="currentColor" className="h-3 w-3 text-electric" aria-hidden="true">
-                                                            <path d="M8 0a8 8 0 110 16A8 8 0 018 0zm3.41 5.59a.75.75 0 00-1.06-1.06L7 7.88 5.65 6.53a.75.75 0 10-1.06 1.06l2 2a.75.75 0 001.06 0l4-4z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" />
-                                                        </svg>
+                                                        <FontAwesomeIcon icon={faCircleCheck} className="h-3 w-3 text-electric" aria-hidden="true" />
                                                         {feat}
                                                     </span>
                                                 ))}

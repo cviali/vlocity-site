@@ -1,6 +1,8 @@
 import Image from "next/image";
 import type { Dictionary } from "@/app/[locale]/dictionaries";
 import FadeIn from "./FadeIn";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot, faClock } from "@fortawesome/free-solid-svg-icons";
 
 const GOOGLE_MAPS_URL = "https://maps.app.goo.gl/v9jj8eVyDJU4nDN3A";
 
@@ -45,13 +47,7 @@ export default function Location({ dict }: { dict: Dictionary }) {
                         <div className="space-y-6">
                             <div>
                                 <div className="flex items-start gap-3 text-electric">
-                                    <svg
-                                        viewBox="0 0 24 24"
-                                        fill="currentColor"
-                                        className="mt-1 h-7 w-7 shrink-0"
-                                    >
-                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" />
-                                    </svg>
+                                    <FontAwesomeIcon icon={faLocationDot} className="mt-1 h-7 w-7 shrink-0" />
                                     <span className="text-base font-medium sm:text-lg">
                                         {dict.location.address}
                                     </span>
@@ -60,13 +56,7 @@ export default function Location({ dict }: { dict: Dictionary }) {
 
                             <div>
                                 <div className="flex items-start gap-3 text-neon">
-                                    <svg
-                                        viewBox="0 0 24 24"
-                                        fill="currentColor"
-                                        className="mt-1 h-7 w-7 shrink-0"
-                                    >
-                                        <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
-                                    </svg>
+                                    <FontAwesomeIcon icon={faClock} className="mt-1 h-7 w-7 shrink-0" />
                                     <span className="text-base font-medium sm:text-lg">
                                         {dict.location.hours}
                                     </span>
@@ -79,13 +69,7 @@ export default function Location({ dict }: { dict: Dictionary }) {
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 rounded-lg bg-electric px-6 py-3 font-bold uppercase tracking-wider text-navy transition-all hover:bg-electric/90 hover:scale-105 active:scale-95"
                             >
-                                <svg
-                                    viewBox="0 0 24 24"
-                                    fill="currentColor"
-                                    className="h-5 w-5"
-                                >
-                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" />
-                                </svg>
+                                <FontAwesomeIcon icon={faLocationDot} className="h-5 w-5" />
                                 {dict.location.cta}
                             </a>
                         </div>

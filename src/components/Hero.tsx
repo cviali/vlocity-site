@@ -1,6 +1,8 @@
 import Image from "next/image";
 import type { Dictionary } from "@/app/[locale]/dictionaries";
 import HeroSportIcons from "./HeroSportIcons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalendarDays, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const BOOKING_URL = "https://ayo.co.id/v/vlocity-arena";
 
@@ -126,9 +128,7 @@ export default function Hero({ dict }: { dict: Dictionary }) {
                             rel="noopener noreferrer"
                             className="inline-flex w-fit items-center justify-center gap-3 rounded-full bg-electric px-8 py-4 text-base font-bold uppercase tracking-wider text-navy transition-all hover:bg-electric/90 hover:scale-105 active:scale-95 sm:px-10"
                         >
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} className="h-5 w-5" aria-hidden="true">
-                                <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                            </svg>
+                            <FontAwesomeIcon icon={faCalendarDays} className="h-5 w-5" aria-hidden="true" />
                             {dict.hero.cta}
                         </a>
                     </div>
@@ -155,16 +155,11 @@ export default function Hero({ dict }: { dict: Dictionary }) {
 
             {/* Scroll indicator */}
             <div className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-1 animate-bounce-slow md:bottom-6">
-                <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
+                <FontAwesomeIcon
+                    icon={faChevronDown}
                     className="h-5 w-5 text-white-60"
                     aria-hidden="true"
-                >
-                    <path d="M19 14l-7 7m0 0l-7-7" />
-                </svg>
+                />
             </div>
         </section>
     );
