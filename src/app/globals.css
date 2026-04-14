@@ -22,3 +22,177 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* Hide scrollbar for carousel containers */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* ── Sport court decorative elements ── */
+
+/* Diagonal section divider: angled top */
+.section-angle-top {
+  clip-path: polygon(0 clamp(24px, 4vw, 48px), 100% 0, 100% 100%, 0 100%);
+  margin-top: calc(-1 * clamp(24px, 4vw, 48px));
+  padding-top: calc(clamp(24px, 4vw, 48px) + 2rem);
+}
+
+/* Diagonal section divider: angled bottom */
+.section-angle-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - clamp(24px, 4vw, 48px)), 0 100%);
+  padding-bottom: calc(clamp(24px, 4vw, 48px) + 2rem);
+}
+
+/* Court-line decorative background pattern */
+.court-lines {
+  background-image:
+    linear-gradient(var(--color-white-10) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-white-10) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* ── Tennis court surface pattern (bird's eye service boxes) ── */
+.court-tennis {
+  position: relative;
+}
+.court-tennis::before {
+  content: "";
+  position: absolute;
+  inset: 12% 15%;
+  border: 1.5px solid rgba(239, 233, 228, 0.12);
+  pointer-events: none;
+}
+.court-tennis::after {
+  content: "";
+  position: absolute;
+  top: 12%;
+  bottom: 12%;
+  left: 50%;
+  width: 0;
+  border-left: 1.5px solid rgba(239, 233, 228, 0.12);
+  pointer-events: none;
+}
+
+/* ── Badminton court surface pattern (T-line + short service) ── */
+.court-badminton {
+  position: relative;
+}
+.court-badminton::before {
+  content: "";
+  position: absolute;
+  inset: 8% 10%;
+  border: 1.5px solid rgba(239, 233, 228, 0.12);
+  pointer-events: none;
+}
+.court-badminton::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 50%;
+  height: 0;
+  border-top: 1.5px solid rgba(239, 233, 228, 0.12);
+  pointer-events: none;
+}
+
+/* ── Padel court pattern (with glass wall indicators) ── */
+.court-padel {
+  position: relative;
+}
+.court-padel::before {
+  content: "";
+  position: absolute;
+  inset: 6% 8%;
+  border: 2px solid rgba(239, 233, 228, 0.15);
+  border-radius: 2px;
+  pointer-events: none;
+}
+.court-padel::after {
+  content: "";
+  position: absolute;
+  top: 6%;
+  bottom: 6%;
+  left: 50%;
+  width: 0;
+  border-left: 1.5px dashed rgba(239, 233, 228, 0.12);
+  pointer-events: none;
+}
+
+/* ── Scoreboard panel ── */
+.scoreboard-panel {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.05) 100%);
+  border: 1px solid rgba(239, 233, 228, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+}
+
+/* ── Net divider (horizontal dashed pattern like a court net) ── */
+.net-divider {
+  position: relative;
+}
+.net-divider::after {
+  content: "";
+  display: block;
+  height: 2px;
+  margin: 2rem auto;
+  max-width: 200px;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(239, 233, 228, 0.25) 0px,
+    rgba(239, 233, 228, 0.25) 8px,
+    transparent 8px,
+    transparent 14px
+  );
+}
+
+/* ── Ticket perforated edge ── */
+.ticket-notch-left {
+  mask-image: radial-gradient(circle at 0 50%, transparent 10px, black 10.5px);
+  -webkit-mask-image: radial-gradient(circle at 0 50%, transparent 10px, black 10.5px);
+}
+.ticket-notch-both {
+  mask-image:
+    radial-gradient(circle at 0 50%, transparent 10px, black 10.5px),
+    radial-gradient(circle at 100% 50%, transparent 10px, black 10.5px);
+  mask-composite: intersect;
+  -webkit-mask-image:
+    radial-gradient(circle at 0 50%, transparent 10px, black 10.5px),
+    radial-gradient(circle at 100% 50%, transparent 10px, black 10.5px);
+  -webkit-mask-composite: source-in;
+}
+
+/* ── Scroll indicator bounce ── */
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+.animate-bounce-slow {
+  animation: bounce-slow 2s ease-in-out infinite;
+}
+
+/* ── Accent stripe (section title underline) ── */
+.accent-stripe {
+  position: relative;
+}
+.accent-stripe::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--color-electric);
+  border-radius: 2px;
+  margin: 1rem auto 0;
+}
+
+/* ── Court surface green tint for section backgrounds ── */
+.court-surface {
+  background: linear-gradient(
+    160deg,
+    var(--color-electric) 0%,
+    color-mix(in srgb, var(--color-electric) 85%, black) 100%
+  );
+}

@@ -1,5 +1,6 @@
-import Image from "next/image";
 import type { Dictionary } from "@/app/[locale]/dictionaries";
+import GalleryLightbox from "./GalleryLightbox";
+import FadeIn from "./FadeIn";
 
 const INSTAGRAM_URL = "https://www.instagram.com/vlocity.arena/";
 
@@ -11,38 +12,26 @@ const images = Array.from({ length: 8 }, (_, i) => ({
 
 export default function Gallery({ dict }: { dict: Dictionary }) {
     return (
-        <section id="gallery" className="bg-navy py-20">
+        <section id="gallery" className="section-angle-top bg-navy py-20">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <h2 className="text-center font-heading text-3xl font-bold text-electric sm:text-4xl">
-                    {dict.gallery.sectionTitle}
-                </h2>
+                <FadeIn>
+                    <h2 className="accent-stripe text-center font-heading text-3xl font-bold uppercase tracking-wide text-electric sm:text-4xl">
+                        {dict.gallery.sectionTitle}
+                    </h2>
+                </FadeIn>
 
-                <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
-                    {images.map(({ src, alt, title }) => (
-                        <div
-                            key={src}
-                            className="group relative aspect-square overflow-hidden rounded-lg"
+                <FadeIn delay={0.2}>
+                    <GalleryLightbox images={images} />
+                </FadeIn>
+
+                <FadeIn delay={0.3}>
+                    <div className="mt-8 text-center">
+                        <a
+                            href={INSTAGRAM_URL}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 rounded-lg border border-white-10 px-6 py-3 text-sm font-bold uppercase tracking-wider text-white-80 transition-all hover:border-electric hover:text-electric hover:scale-105 active:scale-95"
                         >
-                            <Image
-                                src={src}
-                                alt={alt}
-                                title={title}
-                                fill
-                                loading="lazy"
-                                className="object-cover transition-transform duration-300 group-hover:scale-105"
-                                sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
-                            />
-                        </div>
-                    ))}
-                </div>
-
-                <div className="mt-8 text-center">
-                    <a
-                        href={INSTAGRAM_URL}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 rounded-lg border border-white-10 px-6 py-3 text-sm font-medium text-white-80 transition-colors hover:border-electric hover:text-electric"
-                    >
                         <svg
                             viewBox="0 0 24 24"
                             fill="currentColor"
@@ -53,7 +42,8 @@ export default function Gallery({ dict }: { dict: Dictionary }) {
                         </svg>
                         {dict.gallery.viewOnInstagram}
                     </a>
-                </div>
+                    </div>
+                </FadeIn>
             </div>
         </section>
     );

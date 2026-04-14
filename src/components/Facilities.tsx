@@ -1,48 +1,130 @@
 import Image from "next/image";
 import type { Dictionary } from "@/app/[locale]/dictionaries";
+import FadeIn from "./FadeIn";
 
 const facilityCards = [
-    { key: "padel", image: "/images/facilities/padel.jpg" },
-    { key: "tennis", image: "/images/facilities/tennis.jpg" },
-    { key: "badminton", image: "/images/facilities/badminton.jpg" },
-    { key: "cafe", image: "/images/facilities/cafe.jpg" },
+    {
+        key: "padel",
+        image: "/images/facilities/padel.jpg",
+        count: "6",
+        icon: (
+            <svg viewBox="0 0 56 96" fill="none" stroke="currentColor" strokeWidth={2} className="h-8 w-8" aria-hidden="true">
+                <rect x="8" y="4" width="40" height="50" rx="20" />
+                <circle cx="22" cy="22" r="2" /><circle cx="34" cy="22" r="2" />
+                <circle cx="22" cy="34" r="2" /><circle cx="34" cy="34" r="2" />
+                <rect x="24" y="54" width="8" height="30" rx="4" />
+            </svg>
+        ),
+    },
+    {
+        key: "tennis",
+        image: "/images/facilities/tennis.jpg",
+        count: "2",
+        icon: (
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth={2} className="h-8 w-8" aria-hidden="true">
+                <circle cx="32" cy="32" r="28" />
+                <path d="M14 10c7 10 7 34 0 44" />
+                <path d="M50 10c-7 10-7 34 0 44" />
+            </svg>
+        ),
+    },
+    {
+        key: "badminton",
+        image: "/images/facilities/badminton.jpg",
+        count: "2",
+        icon: (
+            <svg viewBox="0 0 64 80" fill="none" stroke="currentColor" strokeWidth={2} className="h-8 w-8" aria-hidden="true">
+                <circle cx="32" cy="68" r="8" />
+                <path d="M24 62L16 14M40 62L48 14" />
+                <path d="M32 54V8" />
+                <ellipse cx="32" cy="8" rx="18" ry="3" />
+            </svg>
+        ),
+    },
+    {
+        key: "cafe",
+        image: "/images/facilities/cafe.jpg",
+        count: "1",
+        icon: (
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="h-8 w-8" aria-hidden="true">
+                <path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z" />
+                <path d="M6 1v3M10 1v3M14 1v3" />
+            </svg>
+        ),
+    },
 ] as const;
 
 export default function Facilities({ dict }: { dict: Dictionary }) {
     return (
-        <section id="facilities" className="bg-warm-grey py-20">
+        <section id="facilities" className="section-angle-top relative bg-warm-grey py-20 sm:py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <h2 className="text-center font-heading text-3xl font-bold text-electric sm:text-4xl">
-                    {dict.facilities.sectionTitle}
-                </h2>
+                <FadeIn>
+                    <h2 className="accent-stripe text-center font-heading text-3xl font-bold uppercase tracking-wide text-electric sm:text-4xl">
+                        {dict.facilities.sectionTitle}
+                    </h2>
+                </FadeIn>
 
-                <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                    {facilityCards.map(({ key, image }) => {
+                {/* ── Alternating full-width showcase ── */}
+                <div className="mt-14 flex flex-col gap-16 sm:gap-20">
+                    {facilityCards.map(({ key, image, count, icon }, i) => {
                         const card = dict.facilities.cards[key];
+                        const isReversed = i % 2 === 1;
+
                         return (
-                            <div
-                                key={key}
-                                className="group overflow-hidden rounded-xl border border-white-10 bg-navy"
-                            >
-                                <div className="relative aspect-[4/3] overflow-hidden">
-                                    <Image
-                                        src={image}
-                                        alt={card.title}
-                                        title={card.title}
-                                        fill
-                                        className="object-cover transition-transform duration-300 group-hover:scale-105"
-                                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                                    />
+                            <FadeIn key={key} delay={i * 0.08} direction={isReversed ? "right" : "left"}>
+                                <div className={`flex flex-col gap-6 sm:gap-8 md:flex-row md:items-center md:gap-12 ${isReversed ? "md:flex-row-reverse" : ""}`}>
+                                    {/* Image */}
+                                    <div className="group relative aspect-[4/3] w-full overflow-hidden rounded-2xl md:w-1/2">
+                                        <Image
+                                            src={image}
+                                            alt={card.title}
+                                            title={card.title}
+                                            fill
+                                            className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                            sizes="(max-width: 768px) 100vw, 50vw"
+                                        />
+                                        {/* Gradient overlay */}
+                                        <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />
+                                        {/* Court count badge */}
+                                        <div className="absolute left-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-electric text-sm font-black text-navy sm:h-12 sm:w-12 sm:text-base">
+                                            {count}×
+                                        </div>
+                                    </div>
+
+                                    {/* Content */}
+                                    <div className="flex flex-1 flex-col md:w-1/2">
+                                        <div className="flex items-center gap-3 text-electric">
+                                            {icon}
+                                            <h3 className="font-heading text-2xl font-bold uppercase tracking-wide text-electric sm:text-3xl">
+                                                {card.title}
+                                            </h3>
+                                        </div>
+
+                                        <div className="mt-3 h-px w-16 bg-electric/30" />
+
+                                        <p className="mt-4 text-base leading-relaxed text-white-60 sm:text-lg">
+                                            {card.description}
+                                        </p>
+
+                                        {/* Feature tags */}
+                                        {card.features && (
+                                            <div className="mt-5 flex flex-wrap gap-2">
+                                                {card.features.map((feat: string) => (
+                                                    <span
+                                                        key={feat}
+                                                        className="inline-flex items-center gap-1.5 rounded-full border border-white-10 px-3 py-1 text-xs font-medium uppercase tracking-wide text-white-80"
+                                                    >
+                                                        <svg viewBox="0 0 16 16" fill="currentColor" className="h-3 w-3 text-electric" aria-hidden="true">
+                                                            <path d="M8 0a8 8 0 110 16A8 8 0 018 0zm3.41 5.59a.75.75 0 00-1.06-1.06L7 7.88 5.65 6.53a.75.75 0 10-1.06 1.06l2 2a.75.75 0 001.06 0l4-4z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" />
+                                                        </svg>
+                                                        {feat}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                        )}
+                                    </div>
                                 </div>
-                                <div className="p-5">
-                                    <h3 className="font-heading text-lg font-semibold">
-                                        {card.title}
-                                    </h3>
-                                    <p className="mt-2 text-sm text-white-60">
-                                        {card.description}
-                                    </p>
-                                </div>
-                            </div>
+                            </FadeIn>
                         );
                     })}
                 </div>

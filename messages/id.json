@@ -20,39 +20,30 @@
     "about": {
         "sectionTitle": "Tentang Vlocity Arena",
         "description": "Vlocity Arena adalah destinasi olahraga raket premium di Jakarta Barat. Dengan fasilitas kelas dunia dan suasana yang nyaman, kami hadir untuk penggemar padel, tenis, dan badminton.",
-        "stats": {
-            "padel": {
-                "count": "6",
-                "label": "Lapangan Padel"
-            },
-            "tennis": {
-                "count": "2",
-                "label": "Lapangan Tenis"
-            },
-            "badminton": {
-                "count": "2",
-                "label": "Lapangan Badminton"
-            }
-        }
+        "mapAlt": "Peta lantai atas Vlocity Arena"
     },
     "facilities": {
         "sectionTitle": "Fasilitas Kami",
         "cards": {
             "padel": {
                 "title": "Lapangan Padel",
-                "description": "6 lapangan padel dengan pencahayaan premium dan kualitas kaca terbaik, termasuk 1 grandstand court dengan tribun penonton."
+                "description": "5 lapangan padel panoramic dengan rumput sintetis dan kaca penuh, ditambah 1 lapangan eksklusif Grandstand VIP dengan area lebih luas dan tribun penonton bertingkat — ideal untuk turnamen dan acara.",
+                "features": ["Panoramic Court", "Rumput Sintetis", "Grandstand VIP Court", "Sewa Raket & Bola", "Ball Boy"]
             },
             "tennis": {
                 "title": "Lapangan Tenis",
-                "description": "2 lapangan tenis profesional dengan permukaan berkualitas tinggi dan pencahayaan optimal."
+                "description": "2 lapangan tenis indoor premium dengan permukaan rubber hard court dan baseline luas 6 meter. Kedua lapangan siap untuk permainan tunggal maupun ganda.",
+                "features": ["Indoor", "Rubber Hard Court", "Baseline 6m", "Sewa Raket & Bola", "Ball Boy"]
             },
             "badminton": {
                 "title": "Lapangan Badminton",
-                "description": "2 lapangan badminton indoor dengan lantai profesional."
+                "description": "2 lapangan badminton indoor premium dengan permukaan Li-Ning carpet, dirancang untuk bermain yang nyaman dan kompetitif.",
+                "features": ["Li-Ning Carpet", "Indoor Premium", "Sewa Raket & Kok", "Ball Boy"]
             },
             "cafe": {
                 "title": "Kafe & Lounge",
-                "description": "Tempat nongkrong yang nyaman untuk bersantai bahkan bekerja, sambil menikmati hidangan dan minuman segar."
+                "description": "Kafe dan lounge bergaya untuk bersantai sebelum atau setelah bermain. Nikmati makanan segar, minuman, dan Wi-Fi gratis. Front office juga menyediakan sewa raket, handuk, pakaian olahraga, dan mushola.",
+                "features": ["Kafe & Resto", "Hot Shower", "Pakaian Olahraga", "Mushola", "Parkir Mobil"]
             }
         }
     },

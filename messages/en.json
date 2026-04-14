@@ -20,39 +20,30 @@
     "about": {
         "sectionTitle": "About Vlocity Arena",
         "description": "Vlocity Arena is the premier racquet sports destination in West Jakarta. With world-class facilities and a welcoming atmosphere, we cater to padel, tennis, and badminton enthusiasts.",
-        "stats": {
-            "padel": {
-                "count": "6",
-                "label": "Padel Courts"
-            },
-            "tennis": {
-                "count": "2",
-                "label": "Tennis Courts"
-            },
-            "badminton": {
-                "count": "2",
-                "label": "Badminton Courts"
-            }
-        }
+        "mapAlt": "Vlocity Arena upper floor map"
     },
     "facilities": {
         "sectionTitle": "Our Facilities",
         "cards": {
             "padel": {
                 "title": "Padel Courts",
-                "description": "6 padel courts with premium lighting and top-quality glass walls, including 1 grandstand court with spectator seats."
+                "description": "5 panoramic padel courts with synthetic grass and full glass enclosures, plus 1 exclusive Grandstand VIP court featuring a larger playing area and tiered spectator tribune — ideal for tournaments and events.",
+                "features": ["Panoramic Courts", "Synthetic Grass", "Grandstand VIP Court", "Racket & Ball Rental", "Ball Boy"]
             },
             "tennis": {
                 "title": "Tennis Courts",
-                "description": "2 professional tennis courts with high-quality surfaces and optimal lighting."
+                "description": "2 indoor premium hard courts with rubber hard court surfaces and a spacious 6-meter baseline. Both courts are fully equipped for singles and doubles play.",
+                "features": ["Indoor Courts", "Rubber Hard Court", "6m Baseline", "Racket & Ball Rental", "Ball Boy"]
             },
             "badminton": {
                 "title": "Badminton Courts",
-                "description": "2 indoor badminton courts with professional flooring."
+                "description": "2 indoor premium badminton courts with Li-Ning carpet surfaces, designed for comfortable and competitive play.",
+                "features": ["Li-Ning Carpet", "Indoor Premium", "Racket & Shuttle Rental", "Ball Boy"]
             },
             "cafe": {
                 "title": "Café & Lounge",
-                "description": "A comfortable spot to hang out or even work, while enjoying fresh food and drinks."
+                "description": "A stylish café and lounge to unwind before or after your game. Enjoy fresh food, drinks and free Wi-Fi. The front office also offers racket rental, towels, sports apparel, and a prayer room.",
+                "features": ["Café & Resto", "Hot Shower", "Sports Apparel", "Prayer Room", "Car Parking"]
             }
         }
     },

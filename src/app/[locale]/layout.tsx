@@ -80,7 +80,7 @@ export default async function LocaleLayout({
         >
             <body className="min-h-full flex flex-col bg-navy text-white">
                 <Header dict={dict} locale={locale as Locale} />
-                <main className="flex-1">{children}</main>
+                <main className="flex-1 overflow-x-hidden">{children}</main>
                 <Footer dict={dict} locale={locale as Locale} />
                 <WhatsAppButton label={dict.whatsapp.ariaLabel} />
             </body>
