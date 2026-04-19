@@ -23,7 +23,7 @@ export default function Events({ dict }: { dict: Dictionary }) {
 
                 <div className="mt-14 grid gap-5 md:grid-cols-2">
                     {/* Corporate */}
-                    <FadeIn delay={0.1} direction="left">
+                    <FadeIn delay={0.1} direction="up">
                         <div className="group relative overflow-hidden rounded-xl bg-navy">
                             {/* Court surface header bar */}
                             <div className="court-surface relative flex items-center gap-4 px-6 py-4">
@@ -45,7 +45,7 @@ export default function Events({ dict }: { dict: Dictionary }) {
                     </FadeIn>
 
                     {/* Tournament */}
-                    <FadeIn delay={0.2} direction="right">
+                    <FadeIn delay={0.2} direction="up">
                         <div className="group relative overflow-hidden rounded-xl bg-navy">
                             {/* Court surface header bar */}
                             <div className="court-surface relative flex items-center gap-4 px-6 py-4">

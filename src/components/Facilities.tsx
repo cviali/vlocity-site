@@ -55,7 +55,7 @@ const facilityCards = [
 
 export default function Facilities({ dict }: { dict: Dictionary }) {
     return (
-        <section id="facilities" className="section-angle-top relative bg-warm-grey py-20 sm:py-24">
+        <section id="facilities" className="section-angle-top relative bg-navy py-20 sm:py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <FadeIn>
                     <h2 className="accent-stripe text-center font-heading text-3xl font-bold uppercase tracking-wide text-electric sm:text-4xl">

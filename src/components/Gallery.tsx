@@ -14,7 +14,7 @@ const images = Array.from({ length: 8 }, (_, i) => ({
 
 export default function Gallery({ dict }: { dict: Dictionary }) {
     return (
-        <section id="gallery" className="section-angle-top bg-navy py-20">
+        <section id="gallery" className="section-angle-top bg-warm-grey py-20">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <FadeIn>
                     <h2 className="accent-stripe text-center font-heading text-3xl font-bold uppercase tracking-wide text-electric sm:text-4xl">

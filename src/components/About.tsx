@@ -1,11 +1,10 @@
 import type { Dictionary } from "@/app/[locale]/dictionaries";
-import MapModal from "./MapModal";
 import FadeIn from "./FadeIn";
 
 export default function About({ dict }: { dict: Dictionary }) {
     return (
-        <section id="about" className="bg-navy py-20">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <section id="about" className="bg-warm-grey py-20">
+            <div className="mx-auto max-w-7xl px-4 sm:px-0">
                 <FadeIn>
                     <h2 className="accent-stripe text-center font-heading text-3xl font-bold uppercase tracking-wide text-electric sm:text-4xl">
                         {dict.about.sectionTitle}
@@ -15,12 +14,25 @@ export default function About({ dict }: { dict: Dictionary }) {
                     </p>
                 </FadeIn>
 
-                {/* Indoor map – tap-to-zoom modal on mobile, plain image on desktop */}
-                <FadeIn delay={0.2}>
-                    <div className="mt-12 rounded-xl border border-white-10">
-                        <MapModal alt={dict.about.mapAlt} />
-                    </div>
-                </FadeIn>
+                {/* Stacked map + legend – legend fades in on top when scrolled into view */}
+                <div className="relative mt-12">
+                    <FadeIn>
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                            src="/images/map/map.svg"
+                            alt={dict.about.mapAlt}
+                            className="w-full h-auto"
+                        />
+                    </FadeIn>
+                    <FadeIn delay={0.8} className="absolute inset-0">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                            src="/images/map/map-legend.svg"
+                            alt=""
+                            className="w-full h-auto"
+                        />
+                    </FadeIn>
+                </div>
             </div>
         </section>
     );

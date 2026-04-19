@@ -2,7 +2,7 @@ import Image from "next/image";
 import type { Dictionary } from "@/app/[locale]/dictionaries";
 import HeroSportIcons from "./HeroSportIcons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendarDays, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
 
 const BOOKING_URL = "https://ayo.co.id/v/vlocity-arena";
 
@@ -46,7 +46,7 @@ const sports = [
 
 export default function Hero({ dict }: { dict: Dictionary }) {
     return (
-        <section className="relative min-h-svh overflow-hidden bg-navy">
+            <section className="relative min-h-svh overflow-hidden bg-warm-grey">
             {/* ── Background layer ── */}
             <div className="absolute inset-0">
                 <Image
@@ -59,9 +59,9 @@ export default function Hero({ dict }: { dict: Dictionary }) {
                     sizes="100vw"
                 />
                 {/* Cinematic gradient: dark left for text, lighter toward right for image reveal */}
-                <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/85 to-navy/40 md:via-navy/70 md:to-navy/20" />
+                <div className="absolute inset-0 bg-gradient-to-r from-warm-grey via-warm-grey/85 to-warm-grey/40 md:via-warm-grey/70 md:to-warm-grey/20" />
                 {/* Bottom fade for smooth transition */}
-                <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-navy to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-warm-grey to-transparent" />
             </div>
 
             {/* ── Diagonal accent line — architectural slash ── */}
@@ -87,7 +87,7 @@ export default function Hero({ dict }: { dict: Dictionary }) {
                     {/* Title — massive staggered lines */}
                     <h1 className="font-heading font-extrabold uppercase leading-[0.85] tracking-tight">
                         <span className="block text-[clamp(3rem,12vw,10rem)] text-electric">
-                            Vlocity
+                            Vlocit<span className="pl-2">y</span>
                         </span>
                         <span className="block text-[clamp(3rem,12vw,10rem)] text-electric/40">
                             Arena
@@ -95,7 +95,7 @@ export default function Hero({ dict }: { dict: Dictionary }) {
                     </h1>
 
                     {/* Subtitle line */}
-                    <p className="mt-4 max-w-md text-sm font-medium uppercase tracking-[0.25em] text-white-60 sm:text-base md:mt-6 md:text-lg">
+                    <p className="mt-4 max-w-lg text-sm font-medium uppercase tracking-[0.25em] text-white-60 sm:text-base md:mt-6 md:text-lg">
                         {dict.hero.subtitle}
                     </p>
 
@@ -146,20 +146,12 @@ export default function Hero({ dict }: { dict: Dictionary }) {
                         </div>
                         <div className="h-8 w-px bg-white-10" />
                         <div>
-                            <div className="font-heading text-2xl font-black text-electric sm:text-3xl">06–00</div>
+                            <div className="font-heading text-2xl font-black text-electric sm:text-3xl">06
+                                <span className="px-1">–</span>00</div>
                             <div className="text-[10px] uppercase tracking-wider text-white-60 sm:text-xs">Open Daily</div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            {/* Scroll indicator */}
-            <div className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-1 animate-bounce-slow md:bottom-6">
-                <FontAwesomeIcon
-                    icon={faChevronDown}
-                    className="h-5 w-5 text-white-60"
-                    aria-hidden="true"
-                />
             </div>
         </section>
     );

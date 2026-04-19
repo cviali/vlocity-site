@@ -14,7 +14,7 @@
     },
     "hero": {
         "title": "Arena Raket Premium di Jakarta Barat",
-        "subtitle": "Padel · Tenis · Badminton · Kafe",
+        "subtitle": "Padel · Tenis · Badminton · Lounge",
         "cta": "Booking Sekarang"
     },
     "about": {
@@ -37,8 +37,8 @@
             },
             "badminton": {
                 "title": "Lapangan Badminton",
-                "description": "2 lapangan badminton indoor premium dengan permukaan Li-Ning carpet, dirancang untuk bermain yang nyaman dan kompetitif.",
-                "features": ["Li-Ning Carpet", "Indoor Premium", "Sewa Raket & Kok", "Ball Boy"]
+                "description": "2 lapangan badminton indoor premium dengan permukaan LI-NING carpet, dirancang untuk bermain yang nyaman dan kompetitif.",
+                "features": ["LI-NING Carpet", "Indoor Premium", "Sewa Raket & Kok", "Ball Boy"]
             },
             "cafe": {
                 "title": "Kafe & Lounge",

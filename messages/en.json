@@ -14,7 +14,7 @@
     },
     "hero": {
         "title": "Premium Racquet Arena in West Jakarta",
-        "subtitle": "Padel · Tennis · Badminton · Café",
+        "subtitle": "Padel · Tennis · Badminton · Lounge",
         "cta": "Book Now"
     },
     "about": {
@@ -37,8 +37,8 @@
             },
             "badminton": {
                 "title": "Badminton Courts",
-                "description": "2 indoor premium badminton courts with Li-Ning carpet surfaces, designed for comfortable and competitive play.",
-                "features": ["Li-Ning Carpet", "Indoor Premium", "Racket & Shuttle Rental", "Ball Boy"]
+                "description": "2 indoor premium badminton courts with LI-NING carpet surfaces, designed for comfortable and competitive play.",
+                "features": ["LI-NING Carpet", "Indoor Premium", "Racket & Shuttle Rental", "Ball Boy"]
             },
             "cafe": {
                 "title": "Café & Lounge",
